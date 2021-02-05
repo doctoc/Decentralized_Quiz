@@ -1,2 +1,2 @@
 # Decentralized_Quiz
-Register , ProposeQuiz , Pool , Participate , Win/Lose :)
+Register , ProposeQuiz(Optional) , Pool , Participate , Win/Lose :))
