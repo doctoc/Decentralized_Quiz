@@ -23,4 +23,7 @@ contract MemberStorage is Variables{
         require(IsMember(a) , "Please register first");
         return member[a].stake;
     }
+    function hasPooled(address a )public view returns(bool){
+   	return (member[a].quiz_entered > 0 ? true : false);
+   }
 }

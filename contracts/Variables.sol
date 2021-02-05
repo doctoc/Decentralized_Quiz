@@ -3,7 +3,7 @@ pragma experimental ABIEncoderV2;
 
 // stores those vars that may change over time .
 contract Variables{
-    // #####change view access modifier of state vars;
+    
     uint256 public proposal_fee;
     uint256 public participation_fee;
     uint256 public participant_limit;

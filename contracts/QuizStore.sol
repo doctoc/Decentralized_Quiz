@@ -9,6 +9,7 @@ contract QuizStorage{
         uint correct;
         address [] participants;
         uint256 TotalPool ;
+        bool commenced;
     }
     Quiz [] proposed_quiz;
   
@@ -18,6 +19,9 @@ contract QuizStorage{
     function IsQuizOwner(address a , uint quiz_id) public view returns(bool) {
         if(proposed_quiz[quiz_id].proposer == a){return true;}
         return false;
+    }
+    function QuizCommenced(uint quiz_id) public view returns(bool){
+    	return proposed_quiz[quiz_id].commenced;
     }
 }
 

@@ -32,17 +32,17 @@ contract Main is MemberStorage  , QuizStorage{
     // currently a single question quiz .
     // call to propose quiz creates a Quiz in storage and slashes a part of stake of the proposer.
     
-    event QuizProposed(address proposer , uint quiz_id );
+    event QuizProposed(address proposer , uint quiz_id , uint correct );
     
     function ProposeQuiz(string memory q , string memory op1 , string memory op2 , string memory op3 , string memory op4 , uint correct) public {
         
         require(IsMember(msg.sender) , "Please register first");
         require(GetStake(msg.sender) >= proposal_fee, "Not enough stake for quiz proposal");
         
-        proposed_quiz.push(Quiz(msg.sender ,q , [op1 ,op2,op3,op4] ,correct,  new address[](0) , 0));
+        proposed_quiz.push(Quiz(msg.sender ,q , [op1 ,op2,op3,op4] ,correct,  new address[](0) , 0 , false));
         member[msg.sender].quiz_proposed = quizcounter;
         member[msg.sender].stake -= proposal_fee;
-        emit QuizProposed(msg.sender , quizcounter);
+        emit QuizProposed(msg.sender , quizcounter , correct);
         quizcounter++;
     }
     
@@ -82,12 +82,20 @@ contract Main is MemberStorage  , QuizStorage{
         require(quiz_id < quizcounter , "Such quiz doesn't exist");
         require(IsQuizOwner(msg.sender , quiz_id) , "Only the quiz owner can call Commence");
         
+        proposed_quiz[quiz_id].commenced = true;
         emit Commence(quiz_id);
         // notify all participants 
     }
     
     event Answered(address a , uint quiz_id , uint option ); 
+ /*   function Answer(uint quiz_id , uint option) public {
     
+    	require(quiz_id < quizcounter , "Such quiz doesn't exist");
+    	require(hasQuizCommenced(quiz_id) , "Quiz has not started yet");
+    	require(IsMember(msg.sender) && hasPooled(msg.sender , quiz_id) , "Cannot allow to answer");
+    	
+    */	
+     
     
     
     
