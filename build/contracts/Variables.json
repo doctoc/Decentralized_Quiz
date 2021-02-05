@@ -1,0 +1,2032 @@
+{
+  "contractName": "Variables",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "GetProposalFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fee",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetProposalFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "GetParticipationFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fee",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetParticipationFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "GetParticipantLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_limit",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetParticipantLimit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"GetParticipantLimit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"GetParticipationFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"GetProposalFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_limit\",\"type\":\"uint256\"}],\"name\":\"SetParticipantLimit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"SetParticipationFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"SetProposalFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/mukul/Documents/Decent_Quiz/contracts/Variables.sol\":\"Variables\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/mukul/Documents/Decent_Quiz/contracts/Variables.sol\":{\"keccak256\":\"0x097f4921b0d943650ea7cd223c078e023b4ff927a545a1f8aa5cf856b32b3f5f\",\"urls\":[\"bzz-raw://82dd5ddd46523a4d598a433a5c5573745e813c44bc5a57af89fe91db53259ac7\",\"dweb:/ipfs/QmXwRbRSRMVdSu5VGmjXVRyHaN45u6p5cbc1hG7HMhWKoj\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5062030d40600081905550620186a0600181905550600360028190555061020f8061003c6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80632b2ae28c146100675780635a7d5451146100835780636330f636146100a157806376020826146100bd578063a6781518146100db578063e3aee4c8146100f9575b600080fd5b610081600480360361007c9190810190610165565b610115565b005b61008b61011f565b604051610098919061019d565b60405180910390f35b6100bb60048036036100b69190810190610165565b610129565b005b6100c5610133565b6040516100d2919061019d565b60405180910390f35b6100e361013d565b6040516100f0919061019d565b60405180910390f35b610113600480360361010e9190810190610165565b610146565b005b8060028190555050565b6000600154905090565b8060008190555050565b6000600254905090565b60008054905090565b8060018190555050565b60008135905061015f816101c2565b92915050565b60006020828403121561017757600080fd5b600061018584828501610150565b91505092915050565b610197816101b8565b82525050565b60006020820190506101b2600083018461018e565b92915050565b6000819050919050565b6101cb816101b8565b81146101d657600080fd5b5056fea26469706673582212208a8c1d03a3bc19b11abfab60bdfbc8e5b7705042f6f50e5fc8893e8491e06d9a64736f6c63430006000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80632b2ae28c146100675780635a7d5451146100835780636330f636146100a157806376020826146100bd578063a6781518146100db578063e3aee4c8146100f9575b600080fd5b610081600480360361007c9190810190610165565b610115565b005b61008b61011f565b604051610098919061019d565b60405180910390f35b6100bb60048036036100b69190810190610165565b610129565b005b6100c5610133565b6040516100d2919061019d565b60405180910390f35b6100e361013d565b6040516100f0919061019d565b60405180910390f35b610113600480360361010e9190810190610165565b610146565b005b8060028190555050565b6000600154905090565b8060008190555050565b6000600254905090565b60008054905090565b8060018190555050565b60008135905061015f816101c2565b92915050565b60006020828403121561017757600080fd5b600061018584828501610150565b91505092915050565b610197816101b8565b82525050565b60006020820190506101b2600083018461018e565b92915050565b6000819050919050565b6101cb816101b8565b81146101d657600080fd5b5056fea26469706673582212208a8c1d03a3bc19b11abfab60bdfbc8e5b7705042f6f50e5fc8893e8491e06d9a64736f6c63430006000033",
+  "sourceMap": "108:976:4:-:0;;;307:135;8:9:-1;5:2;;;30:1;27;20:12;5:2;307:135:4;352:6;337:12;:21;;;;397:6;377:17;:26;;;;434:1;414:17;:21;;;;108:976;;;;;;",
+  "deployedSourceMap": "108:976:4:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;108:976:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;987:95;;;;;;;;;;;;;;;;:::i;:::-;;681:100;;;:::i;:::-;;;;;;;;;;;;;;;;595:81;;;;;;;;;;;;;;;;:::i;:::-;;882:100;;;:::i;:::-;;;;;;;;;;;;;;;;500:90;;;:::i;:::-;;;;;;;;;;;;;;;;786:91;;;;;;;;;;;;;;;;:::i;:::-;;987:95;1069:6;1049:17;:26;;;;987:95;:::o;681:100::-;732:7;757:17;;750:24;;681:100;:::o;595:81::-;665:4;650:12;:19;;;;595:81;:::o;882:100::-;933:7;958:17;;951:24;;882:100;:::o;500:90::-;546:7;571:12;;564:19;;500:90;:::o;786:91::-;866:4;846:17;:24;;;;786:91;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:241;;246:2;234:9;225:7;221:23;217:32;214:2;;;262:1;259;252:12;214:2;297:1;314:53;359:7;350:6;339:9;335:22;314:53;;;304:63;;276:97;208:175;;;;;390:113;473:24;491:5;473:24;;;468:3;461:37;455:48;;;510:213;;628:2;617:9;613:18;605:26;;642:71;710:1;699:9;695:17;686:6;642:71;;;599:124;;;;;730:72;;792:5;781:16;;775:27;;;;809:117;878:24;896:5;878:24;;;871:5;868:35;858:2;;917:1;914;907:12;858:2;852:74;",
+  "source": "pragma solidity ^0.6.0;\npragma experimental ABIEncoderV2;\n\n// stores those vars that may change over time .\ncontract Variables{\n    // #####change view access modifier of state vars;\n    uint256 internal proposal_fee;\n    uint256 internal participation_fee;\n    uint256 internal participant_limit;\n    \n    constructor() public{\n        proposal_fee = 200000 ; // gwei\n        participation_fee = 100000 ;\n        participant_limit = 3;\n    }\n    \n    // ### include modifiers for admin access ;\n    function GetProposalFee() public view returns(uint256){\n        return proposal_fee;\n    }\n    function SetProposalFee(uint256 _fee) public {\n        proposal_fee = _fee;\n    }\n    function GetParticipationFee() public view returns(uint256){\n        return participation_fee;\n    }\n    function SetParticipationFee(uint256 _fee) public {\n        participation_fee = _fee;\n    }\n    function GetParticipantLimit() public view returns(uint256){\n        return participant_limit;\n    }\n    function SetParticipantLimit(uint256 _limit) public {\n        participant_limit = _limit;\n    }\n}\n",
+  "sourcePath": "/home/mukul/Documents/Decent_Quiz/contracts/Variables.sol",
+  "ast": {
+    "absolutePath": "/home/mukul/Documents/Decent_Quiz/contracts/Variables.sol",
+    "exportedSymbols": {
+      "Variables": [
+        581
+      ]
+    },
+    "id": 582,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 503,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "id": 504,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 581,
+        "linearizedBaseContracts": [
+          581
+        ],
+        "name": "Variables",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 506,
+            "name": "proposal_fee",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 581,
+            "src": "187:29:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 505,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "187:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 508,
+            "name": "participation_fee",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 581,
+            "src": "222:34:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 507,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "222:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 510,
+            "name": "participant_limit",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 581,
+            "src": "262:34:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 509,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "262:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 525,
+              "nodeType": "Block",
+              "src": "327:115:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 515,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 513,
+                      "name": "proposal_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 506,
+                      "src": "337:12:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "323030303030",
+                      "id": 514,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "352:6:4",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_200000_by_1",
+                        "typeString": "int_const 200000"
+                      },
+                      "value": "200000"
+                    },
+                    "src": "337:21:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 516,
+                  "nodeType": "ExpressionStatement",
+                  "src": "337:21:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 519,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 517,
+                      "name": "participation_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 508,
+                      "src": "377:17:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "313030303030",
+                      "id": 518,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "397:6:4",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000_by_1",
+                        "typeString": "int_const 100000"
+                      },
+                      "value": "100000"
+                    },
+                    "src": "377:26:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 520,
+                  "nodeType": "ExpressionStatement",
+                  "src": "377:26:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 523,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 521,
+                      "name": "participant_limit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 510,
+                      "src": "414:17:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "33",
+                      "id": 522,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "434:1:4",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_3_by_1",
+                        "typeString": "int_const 3"
+                      },
+                      "value": "3"
+                    },
+                    "src": "414:21:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 524,
+                  "nodeType": "ExpressionStatement",
+                  "src": "414:21:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 526,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 511,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "318:2:4"
+            },
+            "returnParameters": {
+              "id": 512,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "327:0:4"
+            },
+            "scope": 581,
+            "src": "307:135:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 533,
+              "nodeType": "Block",
+              "src": "554:36:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 531,
+                    "name": "proposal_fee",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 506,
+                    "src": "571:12:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 530,
+                  "id": 532,
+                  "nodeType": "Return",
+                  "src": "564:19:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "a6781518",
+            "id": 534,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetProposalFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 527,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "523:2:4"
+            },
+            "returnParameters": {
+              "id": 530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 529,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 534,
+                  "src": "546:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 528,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "546:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "545:9:4"
+            },
+            "scope": 581,
+            "src": "500:90:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 543,
+              "nodeType": "Block",
+              "src": "640:36:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 541,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 539,
+                      "name": "proposal_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 506,
+                      "src": "650:12:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 540,
+                      "name": "_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 536,
+                      "src": "665:4:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "650:19:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 542,
+                  "nodeType": "ExpressionStatement",
+                  "src": "650:19:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "6330f636",
+            "id": 544,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "SetProposalFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 536,
+                  "name": "_fee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 544,
+                  "src": "619:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 535,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "619:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "618:14:4"
+            },
+            "returnParameters": {
+              "id": 538,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "640:0:4"
+            },
+            "scope": 581,
+            "src": "595:81:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 551,
+              "nodeType": "Block",
+              "src": "740:41:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 549,
+                    "name": "participation_fee",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 508,
+                    "src": "757:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 548,
+                  "id": 550,
+                  "nodeType": "Return",
+                  "src": "750:24:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "5a7d5451",
+            "id": 552,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetParticipationFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 545,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "709:2:4"
+            },
+            "returnParameters": {
+              "id": 548,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 547,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 552,
+                  "src": "732:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 546,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "732:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "731:9:4"
+            },
+            "scope": 581,
+            "src": "681:100:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 561,
+              "nodeType": "Block",
+              "src": "836:41:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 557,
+                      "name": "participation_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 508,
+                      "src": "846:17:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 558,
+                      "name": "_fee",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 554,
+                      "src": "866:4:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "846:24:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "846:24:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "e3aee4c8",
+            "id": 562,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "SetParticipationFee",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 555,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 554,
+                  "name": "_fee",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 562,
+                  "src": "815:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 553,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "815:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "814:14:4"
+            },
+            "returnParameters": {
+              "id": 556,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "836:0:4"
+            },
+            "scope": 581,
+            "src": "786:91:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 569,
+              "nodeType": "Block",
+              "src": "941:41:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 567,
+                    "name": "participant_limit",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 510,
+                    "src": "958:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 566,
+                  "id": 568,
+                  "nodeType": "Return",
+                  "src": "951:24:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "76020826",
+            "id": 570,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetParticipantLimit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "910:2:4"
+            },
+            "returnParameters": {
+              "id": 566,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 565,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 570,
+                  "src": "933:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 564,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "933:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "932:9:4"
+            },
+            "scope": 581,
+            "src": "882:100:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 579,
+              "nodeType": "Block",
+              "src": "1039:43:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 577,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 575,
+                      "name": "participant_limit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 510,
+                      "src": "1049:17:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 576,
+                      "name": "_limit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 572,
+                      "src": "1069:6:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1049:26:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 578,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1049:26:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "2b2ae28c",
+            "id": 580,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "SetParticipantLimit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 573,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 572,
+                  "name": "_limit",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 580,
+                  "src": "1016:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 571,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1016:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1015:16:4"
+            },
+            "returnParameters": {
+              "id": 574,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1039:0:4"
+            },
+            "scope": 581,
+            "src": "987:95:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 582,
+        "src": "108:976:4"
+      }
+    ],
+    "src": "0:1085:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/mukul/Documents/Decent_Quiz/contracts/Variables.sol",
+      "exportedSymbols": {
+        "Variables": [
+          581
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 503,
+        "name": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 504,
+        "name": "PragmaDirective",
+        "src": "24:33:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            581
+          ],
+          "name": "Variables",
+          "scope": 582
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "proposal_fee",
+              "overrides": null,
+              "scope": 581,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 505,
+                "name": "ElementaryTypeName",
+                "src": "187:7:4"
+              }
+            ],
+            "id": 506,
+            "name": "VariableDeclaration",
+            "src": "187:29:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "participation_fee",
+              "overrides": null,
+              "scope": 581,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 507,
+                "name": "ElementaryTypeName",
+                "src": "222:7:4"
+              }
+            ],
+            "id": 508,
+            "name": "VariableDeclaration",
+            "src": "222:34:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "participant_limit",
+              "overrides": null,
+              "scope": 581,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 509,
+                "name": "ElementaryTypeName",
+                "src": "262:7:4"
+              }
+            ],
+            "id": 510,
+            "name": "VariableDeclaration",
+            "src": "262:34:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 511,
+                "name": "ParameterList",
+                "src": "318:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 512,
+                "name": "ParameterList",
+                "src": "327:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 506,
+                              "type": "uint256",
+                              "value": "proposal_fee"
+                            },
+                            "id": 513,
+                            "name": "Identifier",
+                            "src": "337:12:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "323030303030",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 200000",
+                              "value": "200000"
+                            },
+                            "id": 514,
+                            "name": "Literal",
+                            "src": "352:6:4"
+                          }
+                        ],
+                        "id": 515,
+                        "name": "Assignment",
+                        "src": "337:21:4"
+                      }
+                    ],
+                    "id": 516,
+                    "name": "ExpressionStatement",
+                    "src": "337:21:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 508,
+                              "type": "uint256",
+                              "value": "participation_fee"
+                            },
+                            "id": 517,
+                            "name": "Identifier",
+                            "src": "377:17:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "313030303030",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 100000",
+                              "value": "100000"
+                            },
+                            "id": 518,
+                            "name": "Literal",
+                            "src": "397:6:4"
+                          }
+                        ],
+                        "id": 519,
+                        "name": "Assignment",
+                        "src": "377:26:4"
+                      }
+                    ],
+                    "id": 520,
+                    "name": "ExpressionStatement",
+                    "src": "377:26:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 510,
+                              "type": "uint256",
+                              "value": "participant_limit"
+                            },
+                            "id": 521,
+                            "name": "Identifier",
+                            "src": "414:17:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "33",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 3",
+                              "value": "3"
+                            },
+                            "id": 522,
+                            "name": "Literal",
+                            "src": "434:1:4"
+                          }
+                        ],
+                        "id": 523,
+                        "name": "Assignment",
+                        "src": "414:21:4"
+                      }
+                    ],
+                    "id": 524,
+                    "name": "ExpressionStatement",
+                    "src": "414:21:4"
+                  }
+                ],
+                "id": 525,
+                "name": "Block",
+                "src": "327:115:4"
+              }
+            ],
+            "id": 526,
+            "name": "FunctionDefinition",
+            "src": "307:135:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "a6781518",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "GetProposalFee",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 527,
+                "name": "ParameterList",
+                "src": "523:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 534,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 528,
+                        "name": "ElementaryTypeName",
+                        "src": "546:7:4"
+                      }
+                    ],
+                    "id": 529,
+                    "name": "VariableDeclaration",
+                    "src": "546:7:4"
+                  }
+                ],
+                "id": 530,
+                "name": "ParameterList",
+                "src": "545:9:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 530
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 506,
+                          "type": "uint256",
+                          "value": "proposal_fee"
+                        },
+                        "id": 531,
+                        "name": "Identifier",
+                        "src": "571:12:4"
+                      }
+                    ],
+                    "id": 532,
+                    "name": "Return",
+                    "src": "564:19:4"
+                  }
+                ],
+                "id": 533,
+                "name": "Block",
+                "src": "554:36:4"
+              }
+            ],
+            "id": 534,
+            "name": "FunctionDefinition",
+            "src": "500:90:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "6330f636",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "SetProposalFee",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_fee",
+                      "overrides": null,
+                      "scope": 544,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 535,
+                        "name": "ElementaryTypeName",
+                        "src": "619:7:4"
+                      }
+                    ],
+                    "id": 536,
+                    "name": "VariableDeclaration",
+                    "src": "619:12:4"
+                  }
+                ],
+                "id": 537,
+                "name": "ParameterList",
+                "src": "618:14:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 538,
+                "name": "ParameterList",
+                "src": "640:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 506,
+                              "type": "uint256",
+                              "value": "proposal_fee"
+                            },
+                            "id": 539,
+                            "name": "Identifier",
+                            "src": "650:12:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 536,
+                              "type": "uint256",
+                              "value": "_fee"
+                            },
+                            "id": 540,
+                            "name": "Identifier",
+                            "src": "665:4:4"
+                          }
+                        ],
+                        "id": 541,
+                        "name": "Assignment",
+                        "src": "650:19:4"
+                      }
+                    ],
+                    "id": 542,
+                    "name": "ExpressionStatement",
+                    "src": "650:19:4"
+                  }
+                ],
+                "id": 543,
+                "name": "Block",
+                "src": "640:36:4"
+              }
+            ],
+            "id": 544,
+            "name": "FunctionDefinition",
+            "src": "595:81:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "5a7d5451",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "GetParticipationFee",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 545,
+                "name": "ParameterList",
+                "src": "709:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 552,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 546,
+                        "name": "ElementaryTypeName",
+                        "src": "732:7:4"
+                      }
+                    ],
+                    "id": 547,
+                    "name": "VariableDeclaration",
+                    "src": "732:7:4"
+                  }
+                ],
+                "id": 548,
+                "name": "ParameterList",
+                "src": "731:9:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 548
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 508,
+                          "type": "uint256",
+                          "value": "participation_fee"
+                        },
+                        "id": 549,
+                        "name": "Identifier",
+                        "src": "757:17:4"
+                      }
+                    ],
+                    "id": 550,
+                    "name": "Return",
+                    "src": "750:24:4"
+                  }
+                ],
+                "id": 551,
+                "name": "Block",
+                "src": "740:41:4"
+              }
+            ],
+            "id": 552,
+            "name": "FunctionDefinition",
+            "src": "681:100:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "e3aee4c8",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "SetParticipationFee",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_fee",
+                      "overrides": null,
+                      "scope": 562,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 553,
+                        "name": "ElementaryTypeName",
+                        "src": "815:7:4"
+                      }
+                    ],
+                    "id": 554,
+                    "name": "VariableDeclaration",
+                    "src": "815:12:4"
+                  }
+                ],
+                "id": 555,
+                "name": "ParameterList",
+                "src": "814:14:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 556,
+                "name": "ParameterList",
+                "src": "836:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 508,
+                              "type": "uint256",
+                              "value": "participation_fee"
+                            },
+                            "id": 557,
+                            "name": "Identifier",
+                            "src": "846:17:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 554,
+                              "type": "uint256",
+                              "value": "_fee"
+                            },
+                            "id": 558,
+                            "name": "Identifier",
+                            "src": "866:4:4"
+                          }
+                        ],
+                        "id": 559,
+                        "name": "Assignment",
+                        "src": "846:24:4"
+                      }
+                    ],
+                    "id": 560,
+                    "name": "ExpressionStatement",
+                    "src": "846:24:4"
+                  }
+                ],
+                "id": 561,
+                "name": "Block",
+                "src": "836:41:4"
+              }
+            ],
+            "id": 562,
+            "name": "FunctionDefinition",
+            "src": "786:91:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "76020826",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "GetParticipantLimit",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 563,
+                "name": "ParameterList",
+                "src": "910:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 570,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 564,
+                        "name": "ElementaryTypeName",
+                        "src": "933:7:4"
+                      }
+                    ],
+                    "id": 565,
+                    "name": "VariableDeclaration",
+                    "src": "933:7:4"
+                  }
+                ],
+                "id": 566,
+                "name": "ParameterList",
+                "src": "932:9:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 566
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 510,
+                          "type": "uint256",
+                          "value": "participant_limit"
+                        },
+                        "id": 567,
+                        "name": "Identifier",
+                        "src": "958:17:4"
+                      }
+                    ],
+                    "id": 568,
+                    "name": "Return",
+                    "src": "951:24:4"
+                  }
+                ],
+                "id": 569,
+                "name": "Block",
+                "src": "941:41:4"
+              }
+            ],
+            "id": 570,
+            "name": "FunctionDefinition",
+            "src": "882:100:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "2b2ae28c",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "SetParticipantLimit",
+              "overrides": null,
+              "scope": 581,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_limit",
+                      "overrides": null,
+                      "scope": 580,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 571,
+                        "name": "ElementaryTypeName",
+                        "src": "1016:7:4"
+                      }
+                    ],
+                    "id": 572,
+                    "name": "VariableDeclaration",
+                    "src": "1016:14:4"
+                  }
+                ],
+                "id": 573,
+                "name": "ParameterList",
+                "src": "1015:16:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 574,
+                "name": "ParameterList",
+                "src": "1039:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 510,
+                              "type": "uint256",
+                              "value": "participant_limit"
+                            },
+                            "id": 575,
+                            "name": "Identifier",
+                            "src": "1049:17:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 572,
+                              "type": "uint256",
+                              "value": "_limit"
+                            },
+                            "id": 576,
+                            "name": "Identifier",
+                            "src": "1069:6:4"
+                          }
+                        ],
+                        "id": 577,
+                        "name": "Assignment",
+                        "src": "1049:26:4"
+                      }
+                    ],
+                    "id": 578,
+                    "name": "ExpressionStatement",
+                    "src": "1049:26:4"
+                  }
+                ],
+                "id": 579,
+                "name": "Block",
+                "src": "1039:43:4"
+              }
+            ],
+            "id": 580,
+            "name": "FunctionDefinition",
+            "src": "987:95:4"
+          }
+        ],
+        "id": 581,
+        "name": "ContractDefinition",
+        "src": "108:976:4"
+      }
+    ],
+    "id": 582,
+    "name": "SourceUnit",
+    "src": "0:1085:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.0+commit.26b70077.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-05T10:49:33.191Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

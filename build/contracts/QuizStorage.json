@@ -1,0 +1,1601 @@
+{
+  "contractName": "QuizStorage",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "NumberofPartipants",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "a",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "quiz_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "IsQuizOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"a\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"quiz_id\",\"type\":\"uint256\"}],\"name\":\"IsQuizOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"NumberofPartipants\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/mukul/Documents/Decent_Quiz/contracts/QuizStore.sol\":\"QuizStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/mukul/Documents/Decent_Quiz/contracts/QuizStore.sol\":{\"keccak256\":\"0xaa7c2f97df66293bf6d58b5f352b503b7e4bb192a671c9d497e07e48dd795a90\",\"urls\":[\"bzz-raw://1ac91ee64dcfc53c32591dbceb1b8f169aebd27447914d1ece33ddd36e524922\",\"dweb:/ipfs/QmR8KwxHnJyzaKGjBi2RoSyCRQPF3ZN6UujU1iVYfLCk5V\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102dc806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80632869fc281461003b578063b9de6bc11461006b575b600080fd5b610055600480360361005091908101906101b3565b61009b565b6040516100629190610215565b60405180910390f35b61008560048036036100809190810190610177565b6100c5565b60405161009291906101fa565b60405180910390f35b60008082815481106100a957fe5b9060005260206000209060090201600701805490509050919050565b60008273ffffffffffffffffffffffffffffffffffffffff16600083815481106100eb57fe5b906000526020600020906009020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156101425760019050610147565b600090505b92915050565b60008135905061015c81610278565b92915050565b6000813590506101718161028f565b92915050565b6000806040838503121561018a57600080fd5b60006101988582860161014d565b92505060206101a985828601610162565b9150509250929050565b6000602082840312156101c557600080fd5b60006101d384828501610162565b91505092915050565b6101e581610242565b82525050565b6101f48161026e565b82525050565b600060208201905061020f60008301846101dc565b92915050565b600060208201905061022a60008301846101eb565b92915050565b600061023b8261024e565b9050919050565b60008115159050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b61028181610230565b811461028c57600080fd5b50565b6102988161026e565b81146102a357600080fd5b5056fea26469706673582212209255cb517e7ddeabbfc0cbf645cc3b2b11ccfc47769bc7fc2c6dc585fe5091d664736f6c63430006000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80632869fc281461003b578063b9de6bc11461006b575b600080fd5b610055600480360361005091908101906101b3565b61009b565b6040516100629190610215565b60405180910390f35b61008560048036036100809190810190610177565b6100c5565b60405161009291906101fa565b60405180910390f35b60008082815481106100a957fe5b9060005260206000209060090201600701805490509050919050565b60008273ffffffffffffffffffffffffffffffffffffffff16600083815481106100eb57fe5b906000526020600020906009020160000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614156101425760019050610147565b600090505b92915050565b60008135905061015c81610278565b92915050565b6000813590506101718161028f565b92915050565b6000806040838503121561018a57600080fd5b60006101988582860161014d565b92505060206101a985828601610162565b9150509250929050565b6000602082840312156101c557600080fd5b60006101d384828501610162565b91505092915050565b6101e581610242565b82525050565b6101f48161026e565b82525050565b600060208201905061020f60008301846101dc565b92915050565b600060208201905061022a60008301846101eb565b92915050565b600061023b8261024e565b9050919050565b60008115159050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b61028181610230565b811461028c57600080fd5b50565b6102988161026e565b81146102a357600080fd5b5056fea26469706673582212209255cb517e7ddeabbfc0cbf645cc3b2b11ccfc47769bc7fc2c6dc585fe5091d664736f6c63430006000033",
+  "sourceMap": "59:540:3:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:540:3;;;;;;;",
+  "deployedSourceMap": "59:540:3:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:540:3;;;;;;;;;;;;;;;;;;;;;;;;295:132;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;432:165;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;295:132;355:7;380:13;394:5;380:20;;;;;;;;;;;;;;;;;;:33;;:40;;;;373:47;;295:132;;;:::o;432:165::-;499:4;553:1;518:36;;:13;532:7;518:22;;;;;;;;;;;;;;;;;;:31;;;;;;;;;;;;:36;;;515:54;;;563:4;556:11;;;;515:54;585:5;578:12;;432:165;;;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:130;;222:6;209:20;200:29;;234:33;261:5;234:33;;;194:78;;;;;279:366;;;400:2;388:9;379:7;375:23;371:32;368:2;;;416:1;413;406:12;368:2;451:1;468:53;513:7;504:6;493:9;489:22;468:53;;;458:63;;430:97;558:2;576:53;621:7;612:6;601:9;597:22;576:53;;;566:63;;537:98;362:283;;;;;;652:241;;756:2;744:9;735:7;731:23;727:32;724:2;;;772:1;769;762:12;724:2;807:1;824:53;869:7;860:6;849:9;845:22;824:53;;;814:63;;786:97;718:175;;;;;900:104;977:21;992:5;977:21;;;972:3;965:34;959:45;;;1011:113;1094:24;1112:5;1094:24;;;1089:3;1082:37;1076:48;;;1131:201;;1243:2;1232:9;1228:18;1220:26;;1257:65;1319:1;1308:9;1304:17;1295:6;1257:65;;;1214:118;;;;;1339:213;;1457:2;1446:9;1442:18;1434:26;;1471:71;1539:1;1528:9;1524:17;1515:6;1471:71;;;1428:124;;;;;1559:91;;1621:24;1639:5;1621:24;;;1610:35;;1604:46;;;;1657:85;;1730:5;1723:13;1716:21;1705:32;;1699:43;;;;1749:121;;1822:42;1815:5;1811:54;1800:65;;1794:76;;;;1877:72;;1939:5;1928:16;;1922:27;;;;1956:117;2025:24;2043:5;2025:24;;;2018:5;2015:35;2005:2;;2064:1;2061;2054:12;2005:2;1999:74;;2080:117;2149:24;2167:5;2149:24;;;2142:5;2139:35;2129:2;;2188:1;2185;2178:12;2129:2;2123:74;",
+  "source": "pragma solidity ^0.6.0;\npragma experimental ABIEncoderV2;\n\ncontract QuizStorage{\n    struct Quiz{\n        address proposer;\n        string ques;\n        string [4] option;\n        uint correct;\n        address [] participants;\n        uint256 TotalPool ;\n    }\n    Quiz [] proposed_quiz;\n  \n    function NumberofPartipants(uint index) public view returns(uint256){\n        return proposed_quiz[index].participants.length;\n    }\n    function IsQuizOwner(address a , uint quiz_id) public view returns(bool) {\n        if(proposed_quiz[quiz_id].proposer == a){return true;}\n        return false;\n    }\n}\n\n\n\n\n\n\n\n",
+  "sourcePath": "/home/mukul/Documents/Decent_Quiz/contracts/QuizStore.sol",
+  "ast": {
+    "absolutePath": "/home/mukul/Documents/Decent_Quiz/contracts/QuizStore.sol",
+    "exportedSymbols": {
+      "QuizStorage": [
+        510
+      ]
+    },
+    "id": 511,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 453,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "id": 454,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 510,
+        "linearizedBaseContracts": [
+          510
+        ],
+        "name": "QuizStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "QuizStorage.Quiz",
+            "id": 470,
+            "members": [
+              {
+                "constant": false,
+                "id": 456,
+                "name": "proposer",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "106:16:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 455,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "106:7:3",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 458,
+                "name": "ques",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "132:11:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 457,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "132:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 462,
+                "name": "option",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "153:17:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_string_storage_$4_storage_ptr",
+                  "typeString": "string[4]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 459,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "153:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "id": 461,
+                  "length": {
+                    "argumentTypes": null,
+                    "hexValue": "34",
+                    "id": 460,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "161:1:3",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_4_by_1",
+                      "typeString": "int_const 4"
+                    },
+                    "value": "4"
+                  },
+                  "nodeType": "ArrayTypeName",
+                  "src": "153:10:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_storage_$4_storage_ptr",
+                    "typeString": "string[4]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 464,
+                "name": "correct",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "180:12:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 463,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "180:4:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 467,
+                "name": "participants",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "202:23:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                  "typeString": "address[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 465,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "202:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 466,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "202:10:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                    "typeString": "address[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 469,
+                "name": "TotalPool",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 470,
+                "src": "235:17:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 468,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "235:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Quiz",
+            "nodeType": "StructDefinition",
+            "scope": 510,
+            "src": "85:175:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 473,
+            "name": "proposed_quiz",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 510,
+            "src": "265:21:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Quiz_$470_storage_$dyn_storage",
+              "typeString": "struct QuizStorage.Quiz[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 471,
+                "name": "Quiz",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 470,
+                "src": "265:4:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Quiz_$470_storage_ptr",
+                  "typeString": "struct QuizStorage.Quiz"
+                }
+              },
+              "id": 472,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "265:7:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Quiz_$470_storage_$dyn_storage_ptr",
+                "typeString": "struct QuizStorage.Quiz[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 486,
+              "nodeType": "Block",
+              "src": "363:64:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 480,
+                          "name": "proposed_quiz",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 473,
+                          "src": "380:13:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Quiz_$470_storage_$dyn_storage",
+                            "typeString": "struct QuizStorage.Quiz storage ref[] storage ref"
+                          }
+                        },
+                        "id": 482,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 481,
+                          "name": "index",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 475,
+                          "src": "394:5:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "380:20:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Quiz_$470_storage",
+                          "typeString": "struct QuizStorage.Quiz storage ref"
+                        }
+                      },
+                      "id": 483,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "participants",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 467,
+                      "src": "380:33:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 484,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "380:40:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 479,
+                  "id": 485,
+                  "nodeType": "Return",
+                  "src": "373:47:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "2869fc28",
+            "id": 487,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "NumberofPartipants",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 476,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 475,
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 487,
+                  "src": "323:10:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 474,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "323:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:12:3"
+            },
+            "returnParameters": {
+              "id": 479,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 478,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 487,
+                  "src": "355:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 477,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "355:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "354:9:3"
+            },
+            "scope": 510,
+            "src": "295:132:3",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 508,
+              "nodeType": "Block",
+              "src": "505:92:3",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 501,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 496,
+                          "name": "proposed_quiz",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 473,
+                          "src": "518:13:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Quiz_$470_storage_$dyn_storage",
+                            "typeString": "struct QuizStorage.Quiz storage ref[] storage ref"
+                          }
+                        },
+                        "id": 498,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 497,
+                          "name": "quiz_id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 491,
+                          "src": "532:7:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "518:22:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Quiz_$470_storage",
+                          "typeString": "struct QuizStorage.Quiz storage ref"
+                        }
+                      },
+                      "id": 499,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "proposer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 456,
+                      "src": "518:31:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 500,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 489,
+                      "src": "553:1:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "518:36:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 505,
+                  "nodeType": "IfStatement",
+                  "src": "515:54:3",
+                  "trueBody": {
+                    "id": 504,
+                    "nodeType": "Block",
+                    "src": "555:14:3",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 502,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "563:4:3",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "functionReturnParameters": 495,
+                        "id": 503,
+                        "nodeType": "Return",
+                        "src": "556:11:3"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 506,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "585:5:3",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 495,
+                  "id": 507,
+                  "nodeType": "Return",
+                  "src": "578:12:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "b9de6bc1",
+            "id": 509,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "IsQuizOwner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 492,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 489,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 509,
+                  "src": "453:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 488,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "453:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 491,
+                  "name": "quiz_id",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 509,
+                  "src": "465:12:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 490,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "465:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "452:26:3"
+            },
+            "returnParameters": {
+              "id": 495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 494,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 509,
+                  "src": "499:4:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 493,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "499:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "498:6:3"
+            },
+            "scope": 510,
+            "src": "432:165:3",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 511,
+        "src": "59:540:3"
+      }
+    ],
+    "src": "0:607:3"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/mukul/Documents/Decent_Quiz/contracts/QuizStore.sol",
+      "exportedSymbols": {
+        "QuizStorage": [
+          510
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 453,
+        "name": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 454,
+        "name": "PragmaDirective",
+        "src": "24:33:3"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            510
+          ],
+          "name": "QuizStorage",
+          "scope": 511
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "QuizStorage.Quiz",
+              "name": "Quiz",
+              "scope": 510,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "proposer",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 455,
+                    "name": "ElementaryTypeName",
+                    "src": "106:7:3"
+                  }
+                ],
+                "id": 456,
+                "name": "VariableDeclaration",
+                "src": "106:16:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "ques",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 457,
+                    "name": "ElementaryTypeName",
+                    "src": "132:6:3"
+                  }
+                ],
+                "id": 458,
+                "name": "VariableDeclaration",
+                "src": "132:11:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "option",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string[4]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "string[4]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 459,
+                        "name": "ElementaryTypeName",
+                        "src": "153:6:3"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "34",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 4",
+                          "value": "4"
+                        },
+                        "id": 460,
+                        "name": "Literal",
+                        "src": "161:1:3"
+                      }
+                    ],
+                    "id": 461,
+                    "name": "ArrayTypeName",
+                    "src": "153:10:3"
+                  }
+                ],
+                "id": 462,
+                "name": "VariableDeclaration",
+                "src": "153:17:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "correct",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 463,
+                    "name": "ElementaryTypeName",
+                    "src": "180:4:3"
+                  }
+                ],
+                "id": 464,
+                "name": "VariableDeclaration",
+                "src": "180:12:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "participants",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address[]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "address[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 465,
+                        "name": "ElementaryTypeName",
+                        "src": "202:7:3"
+                      }
+                    ],
+                    "id": 466,
+                    "name": "ArrayTypeName",
+                    "src": "202:10:3"
+                  }
+                ],
+                "id": 467,
+                "name": "VariableDeclaration",
+                "src": "202:23:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "TotalPool",
+                  "overrides": null,
+                  "scope": 470,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 468,
+                    "name": "ElementaryTypeName",
+                    "src": "235:7:3"
+                  }
+                ],
+                "id": 469,
+                "name": "VariableDeclaration",
+                "src": "235:17:3"
+              }
+            ],
+            "id": 470,
+            "name": "StructDefinition",
+            "src": "85:175:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "proposed_quiz",
+              "overrides": null,
+              "scope": 510,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct QuizStorage.Quiz[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct QuizStorage.Quiz[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Quiz",
+                      "referencedDeclaration": 470,
+                      "type": "struct QuizStorage.Quiz"
+                    },
+                    "id": 471,
+                    "name": "UserDefinedTypeName",
+                    "src": "265:4:3"
+                  }
+                ],
+                "id": 472,
+                "name": "ArrayTypeName",
+                "src": "265:7:3"
+              }
+            ],
+            "id": 473,
+            "name": "VariableDeclaration",
+            "src": "265:21:3"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "2869fc28",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "NumberofPartipants",
+              "overrides": null,
+              "scope": 510,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "index",
+                      "overrides": null,
+                      "scope": 487,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 474,
+                        "name": "ElementaryTypeName",
+                        "src": "323:4:3"
+                      }
+                    ],
+                    "id": 475,
+                    "name": "VariableDeclaration",
+                    "src": "323:10:3"
+                  }
+                ],
+                "id": 476,
+                "name": "ParameterList",
+                "src": "322:12:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 487,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 477,
+                        "name": "ElementaryTypeName",
+                        "src": "355:7:3"
+                      }
+                    ],
+                    "id": 478,
+                    "name": "VariableDeclaration",
+                    "src": "355:7:3"
+                  }
+                ],
+                "id": 479,
+                "name": "ParameterList",
+                "src": "354:9:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 479
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "length",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "participants",
+                              "referencedDeclaration": 467,
+                              "type": "address[] storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct QuizStorage.Quiz storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 473,
+                                      "type": "struct QuizStorage.Quiz storage ref[] storage ref",
+                                      "value": "proposed_quiz"
+                                    },
+                                    "id": 480,
+                                    "name": "Identifier",
+                                    "src": "380:13:3"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 475,
+                                      "type": "uint256",
+                                      "value": "index"
+                                    },
+                                    "id": 481,
+                                    "name": "Identifier",
+                                    "src": "394:5:3"
+                                  }
+                                ],
+                                "id": 482,
+                                "name": "IndexAccess",
+                                "src": "380:20:3"
+                              }
+                            ],
+                            "id": 483,
+                            "name": "MemberAccess",
+                            "src": "380:33:3"
+                          }
+                        ],
+                        "id": 484,
+                        "name": "MemberAccess",
+                        "src": "380:40:3"
+                      }
+                    ],
+                    "id": 485,
+                    "name": "Return",
+                    "src": "373:47:3"
+                  }
+                ],
+                "id": 486,
+                "name": "Block",
+                "src": "363:64:3"
+              }
+            ],
+            "id": 487,
+            "name": "FunctionDefinition",
+            "src": "295:132:3"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "b9de6bc1",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "IsQuizOwner",
+              "overrides": null,
+              "scope": 510,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "a",
+                      "overrides": null,
+                      "scope": 509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 488,
+                        "name": "ElementaryTypeName",
+                        "src": "453:7:3"
+                      }
+                    ],
+                    "id": 489,
+                    "name": "VariableDeclaration",
+                    "src": "453:9:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "quiz_id",
+                      "overrides": null,
+                      "scope": 509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 490,
+                        "name": "ElementaryTypeName",
+                        "src": "465:4:3"
+                      }
+                    ],
+                    "id": 491,
+                    "name": "VariableDeclaration",
+                    "src": "465:12:3"
+                  }
+                ],
+                "id": 492,
+                "name": "ParameterList",
+                "src": "452:26:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 509,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 493,
+                        "name": "ElementaryTypeName",
+                        "src": "499:4:3"
+                      }
+                    ],
+                    "id": 494,
+                    "name": "VariableDeclaration",
+                    "src": "499:4:3"
+                  }
+                ],
+                "id": 495,
+                "name": "ParameterList",
+                "src": "498:6:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "proposer",
+                              "referencedDeclaration": 456,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct QuizStorage.Quiz storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 473,
+                                      "type": "struct QuizStorage.Quiz storage ref[] storage ref",
+                                      "value": "proposed_quiz"
+                                    },
+                                    "id": 496,
+                                    "name": "Identifier",
+                                    "src": "518:13:3"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 491,
+                                      "type": "uint256",
+                                      "value": "quiz_id"
+                                    },
+                                    "id": 497,
+                                    "name": "Identifier",
+                                    "src": "532:7:3"
+                                  }
+                                ],
+                                "id": 498,
+                                "name": "IndexAccess",
+                                "src": "518:22:3"
+                              }
+                            ],
+                            "id": 499,
+                            "name": "MemberAccess",
+                            "src": "518:31:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 489,
+                              "type": "address",
+                              "value": "a"
+                            },
+                            "id": 500,
+                            "name": "Identifier",
+                            "src": "553:1:3"
+                          }
+                        ],
+                        "id": 501,
+                        "name": "BinaryOperation",
+                        "src": "518:36:3"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "functionReturnParameters": 495
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 502,
+                                "name": "Literal",
+                                "src": "563:4:3"
+                              }
+                            ],
+                            "id": 503,
+                            "name": "Return",
+                            "src": "556:11:3"
+                          }
+                        ],
+                        "id": 504,
+                        "name": "Block",
+                        "src": "555:14:3"
+                      }
+                    ],
+                    "id": 505,
+                    "name": "IfStatement",
+                    "src": "515:54:3"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 495
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "66616c7365",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "false"
+                        },
+                        "id": 506,
+                        "name": "Literal",
+                        "src": "585:5:3"
+                      }
+                    ],
+                    "id": 507,
+                    "name": "Return",
+                    "src": "578:12:3"
+                  }
+                ],
+                "id": 508,
+                "name": "Block",
+                "src": "505:92:3"
+              }
+            ],
+            "id": 509,
+            "name": "FunctionDefinition",
+            "src": "432:165:3"
+          }
+        ],
+        "id": 510,
+        "name": "ContractDefinition",
+        "src": "59:540:3"
+      }
+    ],
+    "id": 511,
+    "name": "SourceUnit",
+    "src": "0:607:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.0+commit.26b70077.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-05T10:52:27.908Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
