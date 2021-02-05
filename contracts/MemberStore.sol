@@ -19,7 +19,6 @@ contract MemberStorage is Variables{
         return false;
     }
     
-
     function GetStake(address a ) public view returns(uint256){
         require(IsMember(a) , "Please register first");
         return member[a].stake;
